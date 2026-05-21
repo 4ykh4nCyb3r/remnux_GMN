@@ -12,7 +12,8 @@ def analyze_binary(binary_path, output_json):
     # Example: 'compiled_binaries/busybox_gcc_O2' -> 'busybox_gcc_O2'
     base_filename = os.path.basename(binary_path)
     # Example: 'busybox_gcc_O2' -> 'busybox'
-    binary_prefix = base_filename.split('_')[0]
+    #binary_prefix = base_filename.split('_')[0]
+    binary_prefix = base_filename
     # -------------------------------------------------------------
 
     print(f"[*] Loading '{binary_path}' into angr...")
