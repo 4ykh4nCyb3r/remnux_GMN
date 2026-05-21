@@ -1,0 +1,24 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# ML Checkpoints and Weights
+0933_checkpoint/
+checkpoints/
+checkpoints_mini/
+
+# Large Datasets and Binaries
+ML_data/
+compiled_binaries/
+
+# Logs and tracking (TensorBoard, etc.)
+runs/
+
+# Evaluation outputs and generated reports
+eval_packed/
+eval_suspicious/
+eval_unpacked/
+reports/
+
+# Local personal notes
+notes.txt
