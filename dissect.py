@@ -21,7 +21,8 @@ def analyze_binary(binary_path, output_json):
     proj = angr.Project(binary_path, load_options={'auto_load_libs': False})
     
     print("[*] Generating Control Flow Graph (CFG)...")
-    cfg = proj.analyses.CFGFast()
+    #cfg = proj.analyses.CFGFast()
+    cfg = proj.analyses.CFGFast(resolve_indirect_jumps=False)
 
     dissection_data = []
 
