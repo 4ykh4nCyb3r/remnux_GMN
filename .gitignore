@@ -19,6 +19,8 @@ eval_packed/
 eval_suspicious/
 eval_unpacked/
 reports/
+database_formation/
+output_heatmaps
 
 # Local personal notes
 notes.txt
