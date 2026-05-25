@@ -25,3 +25,4 @@ output_heatmaps
 # Local personal notes
 notes.txt
 .env
+malware_eval.sqlite
