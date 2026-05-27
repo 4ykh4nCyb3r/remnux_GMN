@@ -18,8 +18,16 @@ def analyze_binary(binary_path, output_json):
 
     print(f"[*] Loading '{binary_path}' into angr...")
     # auto_load_libs=False makes the analysis much faster and focuses on your code
-    proj = angr.Project(binary_path, load_options={'auto_load_libs': False})
-    
+    #proj = angr.Project(binary_path, load_options={'auto_load_libs': False})
+    # proj = angr.Project(
+    # binary_path,
+    # load_options={'auto_load_libs': False, 'load_debug_info': True}
+    # )
+    proj = angr.Project(
+    binary_path,
+    load_options={'auto_load_libs': False, 'load_debug_info': True}
+    )
+
     print("[*] Generating Control Flow Graph (CFG)...")
     #cfg = proj.analyses.CFGFast()
     cfg = proj.analyses.CFGFast(resolve_indirect_jumps=False)

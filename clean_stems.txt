@@ -1,0 +1,8 @@
+freopen
+fsetxattr
+ftruncate
+getc
+inflate
+inflateEnd
+inflateInit2_
+strtok

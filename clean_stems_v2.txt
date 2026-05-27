@@ -1,0 +1,12 @@
+direntry_cmp_name
+opendir_safer
+read_error
+savedir
+streamsavedir
+sub_40eed5
+sub_40f2ad
+sub_40f4d1
+sub_410520
+sub_410ba0
+unlinkat
+write_error
